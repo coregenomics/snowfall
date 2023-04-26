@@ -231,8 +231,8 @@ sfInit <- function( parallel=NULL,
 
     ## @TODO Exception handler.
     ## @TODO Timeout on init.
-    ## Ebenso: Timeout - das ist extrem hässlich, wenn das Cluster nicht
-    ## korrekt startet und hängen bleibt (z.B. wenn zuviele CPUs für das
+    ## Ebenso: Timeout - das ist extrem haesslich, wenn das Cluster nicht
+    ## korrekt startet und haengen bleibt (z.B. wenn zuviele CPUs fuer das
     ## Cluster angefordert werden - was PVM schluckt, macht MPI anscheinend
     ## Kopfzerbrechen).
     setDefaultClusterOptions( type = .sfOption$type )
@@ -335,7 +335,7 @@ sfInit <- function( parallel=NULL,
       ## Remove starting message.
       sfRemove( ".startMsg" )
     }
-    ## @TODO Checken, ob dieser Export wirklich noch benötigt ist (jan 10)
+    ## @TODO Checken, ob dieser Export wirklich noch benoetigt ist (jan 10)
     else
       sfExport( ".sfOption", local=FALSE, namespace="snowfall" )
   }
